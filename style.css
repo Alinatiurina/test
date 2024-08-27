@@ -1,0 +1,79 @@
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/* ==================header======================= */
+.header-section {
+  display: flex;
+}
+.header-list-top {
+  display: flex;
+}
+.header-top-item {
+}
+.header-top-item-right {
+}
+.logo-header {
+  color: #ff7d01;
+  font-family: Montserrat;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.tel-icon {
+}
+.adress-link {
+}
+.person-icon {
+}
+.cart-icon {
+}
+.top-menu-list {
+}
+/* ==================baner======================= */
+.banner {
+}
+.right {
+}
