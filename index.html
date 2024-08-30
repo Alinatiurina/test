@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat store</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }</style>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,12 +96,12 @@
       </div>
       <div class="header-section container">
         <ul class="top-menu-list">
-          <li class="top-menu-item checed">Головна</li>
-          <li class="top-menu-item">Котам</li>
-          <li class="top-menu-item">Собакам</li>
-          <li class="top-menu-item">Птахам</li>
-          <li class="top-menu-item">Гризунам</li>
-          <li class="top-menu-item">Рибам</li>
+          <li class="top-menu-item checed"><a class="checed" href="/index.html">Головна</a></li>
+          <li class="top-menu-item"><a href="">Котам</a></li>
+          <li class="top-menu-item"><a href="">Собакам</a></li>
+          <li class="top-menu-item"><a href="">Птахам</a></li>
+          <li class="top-menu-item"><a href="">Гризунам</a></li>
+          <li class="top-menu-item"><a href="">Рибам</a></li>
         </ul>
       </div>
       </div>
@@ -109,12 +113,12 @@
           <p class="text-banner">
             Необхідні товари для вас та вашого улюбленця.
           </p>
-          <button type="button" class="see-more-btn">
+          <a class="see-more-btn" href="#nev-section">
             Дізнатись більше
             <svg class="show-more-icon" width="17" height="17">
               <use href="./image/symbol-defs.svg#icon-Arrow"></use>
             </svg>
-          </button>
+          </a>
           <ul class="paggination-list-banner">
             <li class="paggination-item"><img src="./image/Ellipse 6.png" alt=""></li>
             <li class="paggination-item"><img src="./image/Ellipse 7.png" alt=""></li>
@@ -122,7 +126,7 @@
           </ul>
         </div>
       </section>
-      <section class="new-section">
+      <section class="new-section" id="nev-section">
         <h2 class="new-title">Новинки</h2>
         <ul class="new-cat-food-list">
           <li class="new-cat-food-item">
@@ -482,27 +486,28 @@
         </ul>
           <ul class="footer-icon-list">
           <li class="footer-icon-item">
-            <svg><use href="./image/symbol-defs.svg#icon-Frame"></use></svg>
+            <a href="https://www.linkedin.com/">
+            <svg width="17" height="17"><use href="./image/symbol-defs.svg#icon-Frame"></use></svg></a>
           </li>
-          <li class="footer-icon-item">
-            <svg>
+          <li class="footer-icon-item"><a href="https://www.facebook.com/">
+            <svg width="24" height="24">
               <use href="./image/symbol-defs.svg#icon-ri_facebook"></use>
-            </svg>
+            </svg></a>
           </li>
           <li class="footer-icon-item">
-            <svg>
+            <a href="https://www.instagram.com/"><svg width="24" height="24">
               <use href="./image/symbol-defs.svg#icon-ri_instagram"></use>
-            </svg>
+            </svg></a>
           </li>
           <li class="footer-icon-item">
-            <svg>
+            <a href="https://x.com/"><svg width="17" height="17">
               <use href="./image/symbol-defs.svg#icon-ri_twitter"></use>
-            </svg>
+            </svg></a>
           </li>
-          <li class="footer-icon-item">
-            <svg>
+          <li class="footer-icon-item"><a href="https://www.youtube.com/">
+            <svg width="17" height="17">
               <use href="./image/symbol-defs.svg#icon-bi_youtube"></use>
-            </svg>
+            </svg></a>
           </li>
         </ul></div>
       </div>
@@ -549,14 +554,18 @@
     </footer>
     <section class="mobile-menu">
       <p class="logo-mobile">logo</p>
-      <button class="mobile-close-btn" type="button"></button>
+      <button class="mobile-close-btn" type="button">
+        <svg width="10" height="10">
+          <use href="./image/x-close.svg"></use>
+        </svg>
+      </button>
       <ul class="mobile-menu-list-open">
-        <li class="mobile-menu-item">Головна</li>
-        <li class="mobile-menu-item">Котам</li>
-        <li class="mobile-menu-item">Собакам</li>
-        <li class="mobile-menu-item">Птахам</li>
-        <li class="mobile-menu-item">Гризунам</li>
-        <li class="mobile-menu-item">Рибам</li>
+        <li class="mobile-menu-item"><a href="">Головна</a></li>
+        <li class="mobile-menu-item"><a href="">Котам</a></li>
+        <li class="mobile-menu-item"><a href="">Собакам</a></li>
+        <li class="mobile-menu-item"><a href="">Птахам</a></li>
+        <li class="mobile-menu-item"><a href="">Гризунам</a></li>
+        <li class="mobile-menu-item"><a href="">Рибам</a></li>
       </ul>
     </section>
     <script src="./script.js"></script>

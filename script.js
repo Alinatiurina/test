@@ -5,10 +5,13 @@ const mobLi = document.querySelector('.mobile-menu-item');
 const mainDoc = document.querySelector('main');
 
 function mobileMenuOpen() {
- mob.classList.add("is-open") 
+  setTimeout(() => {
+    mob.classList.add("is-open");
+  }, 100);
 }
+
 function mobileMenuClose() {
- mob.classList.remove("is-open") 
+    mob.classList.remove("is-open");
 }
 btn.addEventListener("click", mobileMenuOpen);
 closeBtn.addEventListener("click", mobileMenuClose);
