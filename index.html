@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body>  
     <header class="header">
@@ -30,15 +30,12 @@
         </ul>
         <ul class="header-list-top">
           <li class="header-top-item-right">
-            <svg class="header-top-icon-right" width="20" height="20">
-              <use href="./image/symbol-defs.svg#icon-heart"></use>
-            </svg>
+            <img src="./image/svg/like.svg" alt="" class="header-top-icon-right" width="20" height="20">
             Улюблені товари
           </li>
           <li class="decor-line"></li>
           <li class="header-top-item-right">
-            <svg class="header-top-icon-right" width="20" height="20">
-              <use href="./image/symbol-defs.svg#icon-scales"></use></svg>
+            <img src="./image/svg/scales.svg" alt="" class="header-top-icon-right" width="20" height="20">
               Порівняти
           </li>
         </ul>
@@ -63,16 +60,12 @@
         <form class="header-form" action="">
           <input class="search-input" type="text" placeholder="Я шукаю... " />
           <button class="search-btn">
-            <svg width="20" height="20">
-              <use href="./image/symbol-defs.svg#icon-glass"></use>
-            </svg>
+            <img src="./image/svg/glass.svg" width="22" height="22"valt="">
           </button>
         </form>
         <div class="tel-block">
           <div class="tel-icon-btn">
-            <svg class="tel-icon" width="17" height="17">
-              <use href="./image/symbol-defs.svg#icon-el_phone"></use>
-            </svg>
+            <img src="./image/svg/el_phone.svg" alt="">
           </div>
           <div>
             <a class="adress-link-tel" href="tel:0800333133">0800 333 133</a>
@@ -82,15 +75,12 @@
 
         <ul class="user-icons-list">
           <li>
-            <svg class="tel-icon" width="32" height="32">
-              <use href="./image/symbol-defs.svg#icon-user"></use>
-            </svg>
+            <button class="user-icon-btn"><img class="tel-icon" src="./image/svg/user.svg" width="32" height="32" alt=""></button>
           </li>
           <li class="decor-line"></li>
           <li>
-            <svg class="tel-icon" width="32" height="32">
-              <use href="./image/symbol-defs.svg#icon-cart"></use>
-            </svg>
+            <button class="user-icon-btn"><img class="tel-icon" width="32" height="32" src="./image/svg/cart.svg" alt=""></button>
+            
           </li>
         </ul>
       </div>
@@ -107,17 +97,31 @@
       </div>
     </header>
     <main>
-      <section class="banner container">
-        <div class="banner-container">
+      <div class="swiper-container">
+      <section class="banner container swiper-wrapper">
+        <div class="banner-container swiper-slide">
           <h2 class="title-banner">Новинка!</h2>
           <p class="text-banner">
             Необхідні товари для вас та вашого улюбленця.
           </p>
           <a class="see-more-btn" href="#nev-section">
             Дізнатись більше
-            <svg class="show-more-icon" width="17" height="17">
-              <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-            </svg>
+            <img src="./image/svg/Arrow.svg" class="show-more-icon" width="17" height="17" alt="">
+          </a>
+          <ul class="paggination-list-banner">
+            <li class="paggination-item"><img src="./image/Ellipse 6.png" alt=""></li>
+            <li class="paggination-item"><img src="./image/Ellipse 7.png" alt=""></li>
+            <li class="paggination-item"><img src="./image/Ellipse 7.png" alt=""></li>
+          </ul>
+        </div>
+        <div class="banner-container swiper-slide">
+          <h2 class="title-banner">Хіти продажу!</h2>
+          <p class="text-banner">
+            Найкращі товари для вас та вашого улюбленця.
+          </p>
+          <a class="see-more-btn" href="#nev-section">
+            Дізнатись більше
+            <img src="./image/svg/Arrow.svg" class="show-more-icon" width="17" height="17" alt="">
           </a>
           <ul class="paggination-list-banner">
             <li class="paggination-item"><img src="./image/Ellipse 6.png" alt=""></li>
@@ -126,6 +130,7 @@
           </ul>
         </div>
       </section>
+    </div>
       <section class="new-section" id="nev-section">
         <h2 class="new-title">Новинки</h2>
         <ul class="new-cat-food-list">
@@ -242,7 +247,9 @@
             </div>
           </li>
         </ul>
-        <button class="load-more-btn">Показати ще</button>
+        <button class="load-more-btn">Показати ще
+          <img src="./image/svg/Arrowdown.svg" alt="">
+        </button>
       </section>
       <section class="hit-section">
         <h2 class="new-title">Хіти продажу</h2>
@@ -360,7 +367,7 @@
             </div>
           </li>
         </ul>
-        <button class="load-more-btn">Показати ще</button>
+        <button class="load-more-btn">Показати ще <img src="./image/svg/Arrowdown.svg" alt=""></button>
       </section>
       <section class="mobile-app-section container">
         <div class="mobile-info-container">
@@ -391,9 +398,7 @@
             <p class="popular-text">Іграшки для котів</p>
             <link class="popular-link" rel="stylesheet" href="" />
             <button class="popular-btn">
-              <svg class="popular-icon" width="17" height="17">
-                <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-              </svg>
+              <img src="./image/svg/Arrow.svg" class="popular-icon" width="17" height="17" alt="">
             </button>
             <img class="popular-img" src="./image/cat.png" alt="" />
           </li>
@@ -401,9 +406,7 @@
             <p class="popular-text">Одяг для котів</p>
             <link class="popular-link" rel="stylesheet" href="" />
             <button class="popular-btn">
-              <svg class="popular-icon" width="17" height="17">
-                <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-              </svg>
+              <img src="./image/svg/Arrow.svg" class="popular-icon" width="17" height="17" alt="">
             </button>
             <img class="popular-img" src="./image/catSecond.png" alt="" />
           </li>
@@ -411,9 +414,7 @@
             <p class="popular-text">Корм для птахів</p>
             <link class="popular-link" rel="stylesheet" href="" />
             <button class="popular-btn">
-              <svg class="popular-icon" width="17" height="17">
-                <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-              </svg>
+              <img src="./image/svg/Arrow.svg" class="popular-icon" width="17" height="17" alt="">
             </button>
             <img class="popular-img" src="./image/parrot.png" alt="" />
           </li>
@@ -421,50 +422,64 @@
             <p class="popular-text">Корм для рибок</p>
             <link class="popular-link" rel="stylesheet" href="" />
             <button class="popular-btn">
-              <svg class="popular-icon" width="17" height="17">
-                <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-              </svg>
+              <img src="./image/svg/Arrow.svg" class="popular-icon" width="17" height="17" alt="">
             </button>
             <img class="popular-img" src="./image/fish.png" alt="" />
           </li>
         </ul>
       </section>
-      <section class="brands-section">
-        <div class="container">
-        <h2 class="brands-title">Наші бренди</h2>
-        <div class="brands-container">
-          <button class="brand-btn-prev">
-            <svg class="back-icon" width="17" height="17">
-              <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-            </svg>
-          </button>
-          <ul class="brands-list">
-            <li class="brands-item">
-              <img class="bfands-img" src="./image/Royal-Canin.png" alt="" />
-            </li>
-            <li class="brands-item ">
-              <img class="bfands-img" src="./image/purina.png" alt="" />
-            </li>
-            <li class="brands-item">
-              <img class="bfands-img" src="./image/acana.png" alt="" />
-            </li>
-            <li class="brands-item">
-              <img class="bfands-img" src="./image/hills.png" alt="" />
-            </li>
+  <section class="brands-section mobile-brands">
+  <div class="container">
+    <h2 class="brands-title">Наші бренди</h2>
+    <button class="brand-btn-prev">
+      <img src="./image/svg/ArrowOrange.png" class="back-icon" width="17" height="17" alt="">
+    </button>
+    <div class="brands-container swiper">
+      <div class="swiper-wrapper brands-wrapper-mobile">
+        <ul class="swiper-slide brands-list-mobile">
+          <li class="brands-item "><img class="brands-img" src="./image/Royal-Canin.png" alt="Brand 1" /></li>
+          <li class="brands-item"><img class="brands-img" src="./image/purina.png" alt="Brand 2" /></li>
+          <li class="brands-item"><img class="brands-img" src="./image/acana.png" alt="Brand 3" /></li>
+          <li class="brands-item"><img class="brands-img" src="./image/hills.png" alt="Brand 4" /></li>
           </ul>
-          <ul class="paggination-list">
-            <li class="paggination-item"><img src="./image/Ellipse 6.png" alt=""></li>
-            <li class="paggination-item"><img src="./image/Ellipse 7.png" alt=""></li>
-            <li class="paggination-item"><img src="./image/Ellipse 7.png" alt=""></li>
+        <ul class="swiper-slide brands-list-mobile">
+          <li class="brands-item "><img class="brands-img" src="./image/Royal-Canin.png" alt="Brand 1" /></li>
+          <li class="brands-item"><img class="brands-img" src="./image/purina.png" alt="Brand 2" /></li>
+          <li class="brands-item"><img class="brands-img" src="./image/acana.png" alt="Brand 3" /></li>
+          <li class="brands-item"><img class="brands-img" src="./image/hills.png" alt="Brand 4" /></li>
+          </ul>
+      </div>
+    </div>
+    <button class="brand-btn-next">
+      <img src="./image/svg/ArrowOrange.png" fill="#ff7d01" class="next-icon" width="17" height="17" alt="">
+    </button>
+  </div>
+</section>
+<section class="brands-section desctop-brands">
+  <div class="container">
+    <h2 class="brands-title">Наші бренди</h2>
+    <button class="brand-btn-prev">
+      <img src="./image/svg/ArrowOrange.png" class="back-icon" width="17" height="17" alt="">
+    </button>
+    <div class="brands-container">
+      <div class="swiper brands-wrapper">
+        <ul class="swiper-wrapper brands-list">
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/Royal-Canin.png" alt="Brand 1" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/purina.png" alt="Brand 2" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/acana.png" alt="Brand 3" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/hills.png" alt="Brand 4" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/Royal-Canin.png" alt="Brand 1" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/purina.png" alt="Brand 2" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/acana.png" alt="Brand 3" /></li>
+          <li class="brands-item swiper-slide"><img class="brands-img" src="./image/hills.png" alt="Brand 4" /></li>
         </ul>
-          <button class="brand-btn-next">
-            <svg class="next-icon" width="17" height="17">
-              <use href="./image/symbol-defs.svg#icon-Arrow"></use>
-            </svg>
-          </button>
-        </div>
-        </div>
-      </section>
+      </div>
+    </div>
+    <button class="brand-btn-next">
+      <img src="./image/svg/ArrowOrange.png" fill="#ff7d01" class="next-icon" width="17" height="17" alt="">
+    </button>
+  </div>
+</section>
       <section class="subscribe-section">
         <div class="container subscribe-container">
         <h2 class="subscribe-title">Підпишись на наші новини</h2>
@@ -487,27 +502,25 @@
           <ul class="footer-icon-list">
           <li class="footer-icon-item">
             <a href="https://www.linkedin.com/">
-            <svg width="17" height="17"><use href="./image/symbol-defs.svg#icon-Frame"></use></svg></a>
+              <img src="./image/svg/linkedin.svg" alt="">
+            </a>
           </li>
           <li class="footer-icon-item"><a href="https://www.facebook.com/">
-            <svg width="24" height="24">
-              <use href="./image/symbol-defs.svg#icon-ri_facebook"></use>
-            </svg></a>
+            <img src="./image/svg/facebook-.svg" alt="">
+          </a>
           </li>
           <li class="footer-icon-item">
-            <a href="https://www.instagram.com/"><svg width="24" height="24">
-              <use href="./image/symbol-defs.svg#icon-ri_instagram"></use>
-            </svg></a>
+            <a href="https://www.instagram.com/">
+              <img src="./image/svg/instagram.svg" alt=""></a>
           </li>
           <li class="footer-icon-item">
-            <a href="https://x.com/"><svg width="17" height="17">
-              <use href="./image/symbol-defs.svg#icon-ri_twitter"></use>
-            </svg></a>
+            <a href="https://x.com/">
+              <img src="./image/svg/twitter.svg" alt="">
+              </a>
           </li>
           <li class="footer-icon-item"><a href="https://www.youtube.com/">
-            <svg width="17" height="17">
-              <use href="./image/symbol-defs.svg#icon-bi_youtube"></use>
-            </svg></a>
+            <img src="./image/svg/youtube.svg" alt="">
+            </a>
           </li>
         </ul></div>
       </div>
@@ -568,6 +581,8 @@
         <li class="mobile-menu-item"><a href="">Рибам</a></li>
       </ul>
     </section>
-    <script src="./script.js"></script>
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script src="./script.js"></script>
   </body>
 </html>
