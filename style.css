@@ -710,6 +710,11 @@ ul {
   background-color: transparent;
   margin-top: 36px;
 }
+.popular-btn:hover,
+.popular-btn:focus,
+.popular-btn:active {
+  border: 1px solid #ff7d01;
+}
 .popular-img {
   position: absolute;
   bottom: 0;
