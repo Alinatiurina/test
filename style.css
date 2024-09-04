@@ -133,6 +133,9 @@ ul {
   font-weight: 700;
   width: 120px;
 }
+.top-menu-link:hover {
+  color: #ff7d01;
+}
 .checed {
   color: #ff7d01;
 }
@@ -496,7 +499,10 @@ ul {
   font-size: 12px;
   font-weight: 700;
 }
-.load-more-btn {
+.load-more-btn,
+.remote-btn,
+.load-more-btn-hit,
+.remote-btn-hit {
   display: flex;
   width: 180px;
   height: 59px;
@@ -517,9 +523,21 @@ ul {
 }
 .load-more-btn:hover,
 .load-more-btn:active,
-.load-more-btn:focus {
+.load-more-btn:focus,
+.remote-btn-hit:hover,
+.remote-btn-hit:active,
+.remote-btn-hit:focus,
+.load-more-btn-hit:hover,
+.load-more-btn-hit:active,
+.load-more-btn-hit:focus {
   background: #ff7d01;
   color: #fff;
+}
+.isnt-visible {
+  display: none;
+}
+.arror-up {
+  rotate: 180deg;
 }
 @media screen and (min-width: 1180px) {
   .new-section {
